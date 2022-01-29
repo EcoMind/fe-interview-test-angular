@@ -7,7 +7,7 @@ import {Component, Input, OnInit, ViewEncapsulation} from '@angular/core';
 })
 export class HeroChildComponent implements OnInit {
 
-  @Input() heroChildName: any;
+  @Input() heroChildName: any = '.?.'
 
   constructor() { }
 

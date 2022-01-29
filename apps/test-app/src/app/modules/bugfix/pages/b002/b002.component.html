@@ -1,2 +1,35 @@
-<p>Hello I'm {{heroParentName}} I'm parent component</p>
-<fe-interview-test-angular-hero-child></fe-interview-test-angular-hero-child>
+<div class="card text-center">
+  <div class="card-header">
+    Description B002
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Child component without name</h5>
+    <p class="card-text">
+      In this example we have 2 components parent and children both print the name.<br>
+      The name is displayed correctly in the parent component while it is missing in the child component.<br>
+      What's the problem?
+    </p>
+  </div>
+  <div class="card-footer text-muted">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Parent component says</h5>
+            <p class="card-text">
+              Hello I'm {{heroParentName}}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Children component says</h5>
+            <fe-interview-test-angular-hero-child></fe-interview-test-angular-hero-child>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
