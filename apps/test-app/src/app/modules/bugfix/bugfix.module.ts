@@ -6,6 +6,8 @@ import {B002Component} from "./pages/b002/b002.component";
 import {HeroChildComponent} from "./components/hero-child/hero-child.component";
 import {B003Component, NgbdSortableHeader} from './pages/b003/b003.component';
 import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { UserViewerComponent } from './components/user-viewer/user-viewer.component';
 
 
 @NgModule({
@@ -14,12 +16,15 @@ import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
     B002Component,
     HeroChildComponent,
     B003Component,
-    NgbdSortableHeader
+    NgbdSortableHeader,
+    UserViewerComponent
   ],
   imports: [
     CommonModule,
     BugfixRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class BugfixModule { }
