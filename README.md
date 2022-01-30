@@ -11,14 +11,11 @@ This is a web application for simple department management.
 
 Your Tasks
 ----------
+In the welcome-page, you'll find a list of task and bug that you can resolve or complete. It's not needed to complete all but only that you prefer.
 
-In the page, pages/foto-book, add an Angular component that receives a list of photo model ()
-
-Add any necessary unit and/or integration tests.
 
 You may use any IDE or text editor you are comfortable with. You are encouraged to add any open source third-party
-library (must be available on Maven Central) that you feel makes your task easier. You may make any structural changes
-to the project that you see fit.
+library that you feel makes your task easier. You may make any structural changes to the project that you see fit.
 
 
 Evaluation Criteria
@@ -31,13 +28,12 @@ Evaluation Criteria
 
 2. Platform knowledge
 
-   Does your code demonstrate your knowledge of the capabilities of the Java platform and its resources?
+   Does your code demonstrate your knowledge of the capabilities of the Angular framework and its resources?
 
 3. Coding style
 
    Is your coding style neat? Does it fit in with the prevailing style of the project? Is it idiomatic such that it will
-   be easily understood by other Java developers? Is it adequately (but not excessively)
-   commented?
+   be easily understood by other Angular developers? Is it adequately (but not excessively) commented?
 
 4. Working with git
 
