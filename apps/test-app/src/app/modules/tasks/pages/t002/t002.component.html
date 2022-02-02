@@ -1,0 +1,55 @@
+<div class="card text-center">
+  <div class="card-header">
+    Description T002
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Develops the CRUD of the product catalog</h5>
+    <p class="card-text">
+      In this example we have a product catalog. The CRUD methods must be implemented using the appropriate service. To create a new product, the form in the dialog must also be implemented.
+    </p>
+  </div>
+  <div class="card-footer text-muted">
+    <div class="container px-4 py-5" id="icon-grid">
+      <h2 class="pb-2 border-bottom">Catalogue</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+        <ng-container *ngFor="let product of products">
+          <div class="col d-flex align-items-start">
+            <svg  class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"></use></svg>
+            <div>
+              <div class="card">
+                <img [src]="product.url" class="card-img-top" alt="notebook">
+                <div class="card-body">
+                  <h5 class="card-title">{{product.title}}</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">{{product.shortDescription}}</h6>
+                  <p class="card-text">
+                    {{product.description}}
+                  </p>
+                  <a href="#" class="card-link">Edit</a>
+                  <a href="#" class="card-link">Remove</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ng-container>
+      </div>
+      <button class="btn btn-outline-primary offset-10" (click)="open(content)">Create new</button>
+    </div>
+  </div>
+</div>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Add product</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+  </div>
+</ng-template>
