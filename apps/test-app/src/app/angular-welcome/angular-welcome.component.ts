@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'fe-interview-test-angular-angular-welcome',
@@ -12,11 +12,11 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   ],
   encapsulation: ViewEncapsulation.Emulated
 })
-export class AngularWelcomeComponent implements OnInit {
+export class AngularWelcomeComponent  {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
+    // This is intentional
   }
+
 
 }

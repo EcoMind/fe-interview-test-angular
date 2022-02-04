@@ -5,14 +5,13 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   templateUrl: './b002.component.html',
   encapsulation: ViewEncapsulation.None
 })
-export class B002Component implements OnInit {
+export class B002Component {
 
   heroParentName = 'Magneta';
   heroChildName = 'Bombasto';
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
+    // This is intentional
   }
 
 }
