@@ -1,4 +1,4 @@
-import {Component, Directive, Input, OnInit, Output, QueryList, ViewChildren, ViewEncapsulation, EventEmitter} from '@angular/core';
+import {Component, Directive, Input, Output, QueryList, ViewChildren, ViewEncapsulation, EventEmitter} from '@angular/core';
 
 interface Country {
   id: number;
