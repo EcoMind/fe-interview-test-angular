@@ -22,8 +22,6 @@
     "@ng-bootstrap/ng-bootstrap": "^11.0.0",
     "@nrwl/angular": "13.4.6",
     "bootstrap": "^4.6.0",
-    "node-forge": ">=1.0.0",
-    "postcss": ">=8.2.13",
     "rxjs": "~7.4.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"
@@ -53,8 +51,6 @@
     "eslint-plugin-cypress": "^2.10.3",
     "jest": "27.2.3",
     "jest-preset-angular": "11.0.0",
-    "node-forge": ">=1.0.0",
-    "postcss": ">=8.2.13",
     "prettier": "^2.3.1",
     "tailwindcss": "^3.0.15",
     "ts-jest": "27.0.5",
