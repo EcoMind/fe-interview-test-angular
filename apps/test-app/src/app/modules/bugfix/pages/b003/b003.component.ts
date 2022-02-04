@@ -43,7 +43,13 @@ export type SortColumn = keyof Country | '';
 export type SortDirection = 'asc' | 'desc' | '';
 const rotate: {[key: string]: SortDirection} = { 'asc': 'desc', 'desc': '', '': 'asc' };
 
-const compare = (v1: string | number, v2: string | number) => v1 < v2 ? -1 : v1 > v2 ? 1 : 0;
+const compare = (v1: string | number, v2: string | number) => {
+  if(v1 < v2) {
+    return -1;
+  } else {
+    return v1 > v2 ? 1 : 0
+  }
+}
 
 export interface SortEvent {
   column: SortColumn;
@@ -72,7 +78,6 @@ export class NgbdSortableHeader {
 @Component({
   selector: 'fe-interview-test-angular-b003',
   templateUrl: './b003.component.html',
-  styleUrls: ['./b003.component.css'],
   encapsulation: ViewEncapsulation.Emulated
 })
 export class B003Component {

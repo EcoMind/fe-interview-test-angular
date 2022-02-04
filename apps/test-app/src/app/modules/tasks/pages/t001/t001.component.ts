@@ -12,11 +12,10 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   ],
   encapsulation: ViewEncapsulation.Emulated
 })
-export class T001Component implements OnInit {
+export class T001Component {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
+    // This is intentional
   }
 
 }

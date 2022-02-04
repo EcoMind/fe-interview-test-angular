@@ -12,11 +12,10 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   ],
   encapsulation: ViewEncapsulation.Emulated
 })
-export class LayoutBaseComponent implements OnInit {
+export class LayoutBaseComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
+    // This is intentional
   }
 
 }

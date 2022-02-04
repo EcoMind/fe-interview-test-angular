@@ -5,13 +5,13 @@ import {Component, Input, OnInit, ViewEncapsulation} from '@angular/core';
   templateUrl: './hero-child.component.html',
   encapsulation: ViewEncapsulation.None
 })
-export class HeroChildComponent implements OnInit {
+export class HeroChildComponent {
 
   @Input() heroChildName: any = '.?.'
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
+    // This is intentional
   }
+
 
 }

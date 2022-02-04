@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import {FormBuilder, FormControl, FormGroup, Validator, Validators} from "@angular/forms";
+import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 import {ExtendendInfo, FormUser} from "../../models/form-user";
 
 @Component({

@@ -13,12 +13,11 @@ import {FormUser} from "../../models/form-user";
   ],
   encapsulation: ViewEncapsulation.Emulated
 })
-export class UserViewerComponent implements OnInit {
+export class UserViewerComponent {
   @Input()
   currentUser: FormUser | undefined;
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
+    // This is intentional
   }
 
 }
